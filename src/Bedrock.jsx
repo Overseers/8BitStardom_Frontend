@@ -4,6 +4,7 @@ import { Column, Row } from 'simple-flexbox'
 import LoadSpinner from './Components/Props/LoadSpinner/LoadSpinner'
 import Main from './Components/Main/Main';
 import LoginScreen from './Components/Login/LoginScreen';
+import './fonts/PixelOperatorHB8.ttf';
 
 export default class Bedrock extends React.Component {
     constructor(props) {
