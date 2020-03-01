@@ -1,10 +1,10 @@
-
 @font-face {
-    font-family:  'PixelOperator';
-    src: local('PixelOperator'), url(./fonts/PixelOperatorHB8.ttf) format('truetype')
+    font-family: 'PixelOperator';
+    src: local('PixelOperator'), url(./fonts/PixelOperatorHB8.ttf) format('truetype');
 }
 
-body, #root {
+body,
+#root {
     height: 100vh;
     width: 100vw;
     padding: 0;
@@ -24,7 +24,7 @@ body, #root {
 
 #Header {
     height: 10%;
-    background-color: #34344A;
+    background-color: #34344a;
 }
 
 #MainContent {
@@ -33,43 +33,43 @@ body, #root {
 
 #Footer {
     height: 10%;
-    background-color: #34344A;
+    background-color: #34344a;
 }
 
-.loginBackground{
+.loginBackground {
     height: 100%;
-    background-color: #34344A;
+    background-color: #34344a;
 }
 
 .loginBox {
     height: 550px;
     width: 450px;
-    background-color: #404E5c;
+    background-color: #404e5c;
     border: 2px solid #628395;
 }
 
 .genericButton {
-	background:#628395;
-	border:2px solid #34344A;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:6px 12px;
-    text-decoration:none;
+    background: #628395;
+    border: 2px solid #34344a;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
     margin: 5px;
     box-sizing: border-box;
     font-family: PixelOperator;
 }
 .genericButton:hover {
-	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
-	background-color:#68a54b;
+    background: linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+    background-color: #68a54b;
 }
 .genericButton:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
 .checkbox-label {
@@ -103,35 +103,33 @@ body, #root {
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
 }
 
-
 .checkbox-label input:checked ~ .checkbox-custom {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 5px;
     -webkit-transform: rotate(0deg) scale(1);
     -ms-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
-    opacity:1;
-    border: 2px solid #FFFFFF;
+    opacity: 1;
+    border: 2px solid #ffffff;
 }
-
 
 .checkbox-label .checkbox-custom::after {
     position: absolute;
-    content: "";
+    content: '';
     left: 12px;
     top: 12px;
     height: 0px;
     width: 0px;
     border-radius: 5px;
-    border: solid #009BFF;
+    border: solid #009bff;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(0deg) scale(0);
     -ms-transform: rotate(0deg) scale(0);
     transform: rotate(0deg) scale(0);
-    opacity:1;
+    opacity: 1;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -139,36 +137,36 @@ body, #root {
     -o-transition: all 0.3s ease-out;
 }
 
-
 .checkbox-label input:checked ~ .checkbox-custom::after {
-  -webkit-transform: rotate(45deg) scale(1);
-  -ms-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
-  opacity:1;
-  left: 8px;
-  top: 3px;
-  width: 6px;
-  height: 12px;
-  border: solid #009BFF;
-  border-width: 0 2px 2px 0;
-  background-color: transparent;
-  border-radius: 0;
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #009bff;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
 }
 
 .input-title {
     clear: both;
     font-size: 16px;
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 300;
 }
 
-h1, button {
+h1,
+button {
     font-family: PixelOperator;
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
-input[type="text"] {
+input[type='text'] {
     font-size: 15px;
     font-family: PixelOperator;
     text-align: center;
@@ -179,16 +177,107 @@ input::-webkit-input-placeholder {
     font-size: 20px;
 }
 
-
 h1 {
-  height: 40px;
-  width: 100%;
-  font-size: 30px;
-  color: white;
-  padding: 15px;
-  line-height: 150%;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
-  text-align: center;
-  text-align: center;
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    line-height: 150%;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-align: center;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field:placeholder-shown {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__field::placeholder {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    color: transparent;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+/* demo */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222222;
 }
