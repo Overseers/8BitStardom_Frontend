@@ -1,7 +1,7 @@
 import React from 'react';
 import './Bedrock.css';
 import Main from './components/Main';
-import LoginScreen from './components/screen/Login/LoginScreen';
+import LoginScreen from './components/screen/login/LoginScreen';
 import './fonts/PixelOperatorHB8.ttf';
 
 export default class Bedrock extends React.Component {
