@@ -45,18 +45,24 @@ export default class RegisterForm extends Component {
             <form onSubmit={this.handleFormSubmit}>
                 {this.buildFields()}
                 <Row
-                    horizontal='center'
+                    horizontal={'center'}
                     style={{
                         margin: '15px',
                     }}>
                     <Row>
-                        <button className='genericButton' onClick={() => this.props.switchToLogin()}>
-                            Already Registered
+                        <button
+                            className={'genericButton'}
+                            onClick={() => this.props.switchToLogin()}
+                        >
+                            {'Already Registered'}
                         </button>
                     </Row>
                     <Row>
-                        <button className='genericButton' onClick={() => console.log('button')}>
-                            Submit Creation
+                        <button
+                            className={'genericButton'}
+                            onClick={() => console.log('button')}
+                        >
+                            {'Submit Creation'}
                         </button>
                     </Row>
                 </Row>

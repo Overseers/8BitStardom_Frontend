@@ -22,21 +22,35 @@ export default class LoginScreen extends Component {
 
     render() {
         return (
-            <Column className='loginBackground' vertical='center' horizontal='center'>
-                <Row className='loginBox' horizontal='center' vertical='start'>
+            <Column
+                className={'loginBackground'}
+                vertical={'center'}
+                horizontal={'center'}
+            >
+                <Row
+                    className={'loginBox'}
+                    horizontal={'center'}
+                    vertical={'start'}
+                >
                     <Column>
                         <Row
-                            horizontal='center'
+                            horizontal={'center'}
                             style={{
                                 margin: '15px',
                             }}>
-                            <h1>8Bit Stardom</h1>
+                            <h1>{'8Bit Stardom'}</h1>
                         </Row>
-                        {this.state.showRegisterScreen && (
-                            <RegisterForm switchToLogin={() => this.setState({ showRegisterScreen: false })} domain={this.props.domain} />
+                        {(this.state.showRegisterScreen) && (
+                            <RegisterForm
+                                switchToLogin={() => this.setState({ showRegisterScreen: false })}
+                                domain={this.props.domain}
+                            />
                         )}
-                        {!this.state.showRegisterScreen && (
-                            <LoginForm switchToRegister={() => this.setState({ showRegisterScreen: true })} domain={this.props.domain} />
+                        {(!this.state.showRegisterScreen) && (
+                            <LoginForm
+                                switchToRegister={() => this.setState({ showRegisterScreen: true })}
+                                domain={this.props.domain}
+                            />
                         )}
                     </Column>
                 </Row>

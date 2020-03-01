@@ -33,35 +33,35 @@ export default class Form extends Component {
         return (
             <form onSubmit={this.handleFormSubmit}>
                 <Row
-                    horizontal='center'
+                    horizontal={'center'}
                     style={{
                         margin: '15px',
                     }}>
                     <Column>
-                        <Row horizontal='spaced'>
+                        <Row horizontal={'spaced'}>
                             <input
-                                type='text'
-                                placeholder='Email'
+                                type={'text'}
+                                placeholder={'Email'}
                                 style={{
                                     width: '300px',
                                     height: '50px',
                                 }}
-                                className='placeholder'
+                                className={'placeholder'}
                                 onChange={({ target }) => this.setState({ email: target.value })}
                             />
                         </Row>
                     </Column>
                 </Row>
                 <Row
-                    horizontal='center'
+                    horizontal={'center'}
                     style={{
                         margin: '15px',
                     }}>
                     <Column>
                         <Row>
                             <input
-                                type='password'
-                                placeholder='Password'
+                                type={'password'}
+                                placeholder={'Password'}
                                 style={{
                                     width: '300px',
                                     height: '50px',
@@ -72,49 +72,64 @@ export default class Form extends Component {
                     </Column>
                 </Row>
                 <Row
-                    horizontal='center'
+                    horizontal={'center'}
                     style={{
                         margin: '15px',
                     }}>
-                    <Column vertical='center' style={{ marginRight: '5px' }}>
-                        <label className='input-title'>Remember Me</label>
+                    <Column
+                        vertical={'center'}
+                        style={{ marginRight: '5px' }}
+                    >
+                        <label className={'input-title'}>
+                            {'Remember Me'}
+                        </label>
                     </Column>
                     <Column>
-                        <label className='checkbox-label'>
-                            <input type='checkbox' onChange={({ target }) => this.setState({ rememberMe: target.checked })} />
-                            <span className='checkbox-custom rectangular' />
+                        <label className={'checkbox-label'}>
+                            <input
+                                type={'checkbox'}
+                                onChange={({ target }) => this.setState({ rememberMe: target.checked })}
+                            />
+                            <span className={'checkbox-custom rectangular'} />
                         </label>
                     </Column>
                 </Row>
                 <Row
-                    horizontal='center'
-                    style={{
-                        margin: '15px',
-                    }}>
-                    <Row>
-                        <button className='genericButton' onClick={() => this.props.switchToRegister()}>
-                            Register
-                        </button>
-                    </Row>
-                    <Row>
-                        <button className='genericButton' onClick={() => console.log('button')}>
-                            Login
-                        </button>
-                    </Row>
-                </Row>
-                <Row
-                    horizontal='center'
+                    horizontal={'center'}
                     style={{
                         margin: '15px',
                     }}>
                     <Row>
                         <button
-                            className='genericButton'
+                            className={'genericButton'}
+                            onClick={() => this.props.switchToRegister()}
+                        >
+                            {'Register'}
+                        </button>
+                    </Row>
+                    <Row>
+                        <button
+                            className={'genericButton'}
+                            onClick={() => console.log('button')}
+                        >
+                            {'Login'}
+                        </button>
+                    </Row>
+                </Row>
+                <Row
+                    horizontal={'center'}
+                    style={{
+                        margin: '15px',
+                    }}>
+                    <Row>
+                        <button
+                            className={'genericButton'}
                             style={{
                                 width: '250px',
                             }}
-                            onClick={() => console.log('button')}>
-                            Reset Password
+                            onClick={() => console.log('button')}
+                        >
+                            {'Reset Password'}
                         </button>
                     </Row>
                 </Row>

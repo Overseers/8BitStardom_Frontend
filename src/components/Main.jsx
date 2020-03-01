@@ -4,11 +4,11 @@ import { Column, Row } from 'simple-flexbox';
 export default class Main extends Component {
     render() {
         return (
-            <Column id="Bedrock">
+            <Column id={'Bedrock'}>
                 <Row id="Header">
                     test
                 </Row>
-                <Row id="MainContent">
+                <Row id={'MainContent'}>
                     <Column>
                         test
                     </Column>
@@ -16,10 +16,10 @@ export default class Main extends Component {
                         test
                     </Column>
                 </Row>
-                <Row id="Footer">
+                <Row id={'Footer'}>
                     test
                 </Row>
             </Column>
-        )
+        );
     }
 }
