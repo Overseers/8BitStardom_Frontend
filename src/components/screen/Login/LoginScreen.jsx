@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { Column, Row } from 'simple-flexbox';
-import LoginForm from './LoginForm';
-import RegisterForm from './RegisterForm';
+import LoginForm from './Form';
+import RegisterForm from './Register';
 
 export default class LoginScreen extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            showRegisterScreen: false,
+            showRegisterScreen: false
         };
     }
 
     handleLoginSubmit(event) {
         event.preventDefault();
-        const { target } = event;
-        console.log(target);
     }
 
     handleFormSubmit(event) {
